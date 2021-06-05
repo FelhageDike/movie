@@ -22,6 +22,9 @@ function Login(){
         document.getElementById("notLogged").parentNode.removeChild(document.getElementById("notLogged"));
     }
 }
+user.innerText = localStorage.user
+
+
 
 if(!localStorage.user){
     localStorage.user = "";
@@ -33,7 +36,7 @@ if(localStorage.user){
     isLogged = true;
 }
 
-user.innerText = localStorage.user
+
 
 function OpenForm(){
     document.getElementById("flexLogin").style.display = "flex";
