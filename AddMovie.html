@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить фильм</title>
+</head>
+<header class="site-header">
+    <div>
+
+        <a href="index.html" class="navButtons">Фильмотека</a>
+
+    </div>
+    <div class="navbar">
+        <nav>
+
+            <a href="#" class="navButtons">Действие</a>
+            <a href="#" class="navButtons">Действие</a>
+            <a href="#" class="navButtons">Действие</a>
+        </nav>
+    </div>
+
+    <div class="login dropdown">
+        <img src="https://www.decoracionesglobos.com/wp-content/uploads/2018/09/47-Rosa-Nacarado.png">
+
+        <button id="loginBtn" class="navButtons login-child">Войти</button>
+        <span id="user" class="navButtons login-child"></span>
+    </div>
+
+
+
+</header>
+<body>
+<div class="addPanel">
+    <form class="addMovie">
+        <input class="textBox" placeholder="Название" type="text" id="name">
+        <input class="textBox" placeholder="Страна" type="text" id="country">
+        <input class="textBox" placeholder="Жанр" type="text" id="genre">
+        <input class="textBox" placeholder="Режиссер" type="text" id="director">
+        <input class="textBox" placeholder="Сценарий" type="text" id="scenario">
+        <input class="textBox" placeholder="Продюсер" type="text" id="producer">
+        <input class="textBox" placeholder="Оператор" type="text" id="operator">
+        <input class="textBox" placeholder="Композитор" type="text" id="compositor">
+        <input class="textBox" placeholder="Сборы" type="text" id="cash">
+        <input class="textBox" placeholder="Возраст" type="text" id="ageRating">
+        <input class="textBox" placeholder="Продолжительность" type="text" id="timeline">
+        <input class="textBox" placeholder="Ссылка на постер" type="text" id="poster">
+        <input class="textBox" type="date" id="release">
+        <button class="info btn" onclick="AddMovie()" id="btnSubmit">Добавить</button>
+    </form>
+</div>
+    <script src="user.js"></script>
+</body>
+</html>

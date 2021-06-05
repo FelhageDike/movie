@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмотека</title>
+</head>
+<header class="site-header">
+    <div>
+
+             <a href="index.html" class="navButtons">Фильмотека</a>
+
+    </div>
+    <div class="navbar">
+        <nav>
+
+            <a href="#" class="navButtons">Действие</a>
+            <a href="#" class="navButtons">Действие</a>
+            <a href="#" class="navButtons">Действие</a>
+        </nav>
+    </div>
+
+    <div class="login dropdown">
+        <img src="https://www.decoracionesglobos.com/wp-content/uploads/2018/09/47-Rosa-Nacarado.png">
+
+
+        <button id="loginBtn" class="navButtons login-child" onclick="OpenForm()">Войти</button>
+        <span id="user" class="navButtons login-child"></span>
+    </div>
+
+
+
+</header>
+<body>
+    <div id="notLogged">
+        <div class="noneFilm">
+            <h1>Пожалуйста, войдите в профиль, чтобы добавить фильм (:</h1>
+        </div>
+    </div>
+    <div class="form" id="flexLogin">
+        <form class="register" id="loginForm">
+            <input class="textBox" id="username" type="text" placeholder="username" required><br/>
+            <input class="textBox" id="psw" type="password" placeholder="password" required><br/>
+            <button class="btn" type="submit" id="submitBtn" onclick="Login()">Login</button>
+        </form>
+    </div>
+
+    <div id="empty">
+        <div class="noneFilm">
+            <h1>У вас еще нет ни одного фильма:(</h1>
+        </div>
+        <div class="newFilm">
+            <a href="AddMovie.html"><button class="btn">Пополнить фильмотеку</button></a>
+        </div>
+    </div>
+
+    <div id="grid">
+        <div><img src="https://picfiles.alphacoders.com/123/thumb-1920-123524.jpg" width="200px" height="200px"></div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>
