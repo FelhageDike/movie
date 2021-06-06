@@ -16,3 +16,14 @@ add.onclick = function(){
         parent_divs.appendChild(newdiv);
     
 };
+
+
+    window.onload = function() {
+        if (document.getElementById('added_div')) {
+                document.getElementById("empty").style.display = "none";
+        }
+        else {
+            document.getElementById("empty").style.display = "inline";
+        }
+
+    };

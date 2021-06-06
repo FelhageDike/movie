@@ -8,7 +8,7 @@ margin: 0;
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    background-color: black;
+    background-color: #100F10;
     box-shadow: 0px 10px 10px rgba(220, 0, 150, 0.8);
 }
 
@@ -122,19 +122,20 @@ span{
 .textBox{
     border-radius: 20px;
     text-align: center;
-    background-color: #F83AB7;
+    background-color: #ffffff;
     margin: 5px;
-    color: #ffffff;
+    color: black;
 }
 
 .textBox::placeholder{
-    color: #ffffff;
+    color: black;
 }
 .noneFilm{
     margin-top: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .newFilm{
@@ -147,7 +148,7 @@ span{
     padding: 20px;
     max-width: 180px;
     text-align: center;
-    background-color: black;
+    background-color:  #F83AB7;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(220, 0, 150, 1);
 }
@@ -168,9 +169,17 @@ span{
 }
 #grid > div {
     font-size: 5vw;
-    padding: .5em;
+    padding: 10px;
     background: gold;
     text-align: center;
 }
+body{
+    background-color: #100F00;
+}
+.add_div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 
+}
 
