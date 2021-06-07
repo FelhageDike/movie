@@ -34,30 +34,57 @@
             <h1>Пожалуйста, войдите в профиль, чтобы добавить фильм (:</h1>
         </div>
     </div>
-    <div class="form" id="flexLogin">
-        <form class="register" id="loginForm">
-            <input class="textBox" id="username" type="text" placeholder="username" required><br/>
-            <input class="textBox" id="psw" type="password" placeholder="password" required><br/>
-            <button class="btn" type="submit" id="submitBtn" onclick="Login()">Login</button>
-        </form>
+    <div class="popup" id="popup-2">
+        <div class="form content" id="flexLogin">
+            <form class="register" id="loginForm">
+                <input class="textBox" id="username" type="text" placeholder="username" required><br/>
+                <input class="textBox" id="psw" type="password" placeholder="password" required><br/>
+                <button class="btn" type="submit" id="submitBtn" onclick="Login()">Login</button>
+            </form>
+        </div>
     </div>
 
-    <div id="empty" class="main_block">
+    <div id="empty">
         <div class="noneFilm">
             <h1>У вас еще нет ни одного фильма:(</h1>
         </div>
         <div class="newFilm">
-            <a href="AddMovie.html"><button class="btn">Пополнить фильмотеку</button></a>
+            <button class="btn" onclick="TogglePopUp()">Пополнить фильмотеку</button>
         </div>
     </div>
 <div class="add_div">
-    <button class="btn" id="add_div">ДОБАВИТЬ ДИВ</button>
 
 </div>
-    <div id="grid" class="list_comm">
+
+    <div id="grid" class="list_comm"></div>
+
+    <div class="popup" id="popup-1">
+        <div class="content">
+            <div class="close-btn" onclick="TogglePopUp()">X</div>
+            <h1>Что за фильм?</h1>
+            <div class="input-field"> <input class="validate" placeholder="Название" type="text" id="name"></div>
+            <div class="input-field"> <input class="validate" placeholder="Страна" type="text" id="country"></div>
+            <div class="input-field"> <input class="validate" placeholder="Жанр" type="text" id="genre"></div>
+            <div class="input-field"><input class="validate" placeholder="Режиссер" type="text" id="director"></div>
+            <div class="input-field"><input class="validate" placeholder="Сценарий" type="text" id="scenario"></div>
+            <div class="input-field"> <input class="validate" placeholder="Продюсер" type="text" id="producer"></div>
+            <div class="input-field"> <input class="validate" placeholder="Оператор" type="text" id="operator"></div>
+            <div class="input-field"> <input class="validate" placeholder="Композитор" type="text" id="compositor"></div>
+            <div class="input-field"><input class="validate" placeholder="Сборы" type="text" id="cash"></div>
+            <div class="input-field"><input class="validate" placeholder="Возраст" type="text" id="ageRating"></div>
+            <div class="input-field"><input class="validate" placeholder="Продолжительность" type="text" id="timeline"></div>
+            <div class="input-field"><input class="validate" placeholder="Ссылка на постер" type="text" id="poster"></div>
+            <div class="input-field"><input class="validate" type="date" id="release"></div>
+            <div class="input-field"><button class="btn" onclick="AddMovie()" id="btnSubmit">Добавить</button></div>
+        </div>
 
     </div>
-    <script src="addMovie.js"></script>
+
+
+
+
+
     <script src="user.js"></script>
+    <script src="addMovie.js"></script>
 </body>
 </html>
