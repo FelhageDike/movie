@@ -21,7 +21,7 @@ function Login(){
 
     if(isLogged){
         document.getElementById("loginForm").parentNode.removeChild(document.getElementById("loginForm"));
-        document.getElementById("empty").style.display = "block";
+        // document.getElementById("empty").style.display = "block";
         document.getElementById("notLogged").parentNode.removeChild(document.getElementById("notLogged"));
     }
 }
@@ -75,7 +75,16 @@ function TogglePopUp(){
 if(!isLogged){
     //document.getElementById("empty").style.display = "none";
     document.getElementById("empty").parentNode.removeChild(document.getElementById("empty"));
+    document.getElementById("drop").parentNode.removeChild(document.getElementById("drop"));
+    document.getElementById("user").style.display = "none";
 }
-
-
+function Exit(){
+    window.localStorage.removeItem("user");
+}
+function reload(){
+    location.reload()
+}
+function set(){
+    setTimeout(reload,1);
+}
 

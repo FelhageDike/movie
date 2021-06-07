@@ -22,7 +22,11 @@
     </div>
 
     <div class="login">
-        <img src="https://www.decoracionesglobos.com/wp-content/uploads/2018/09/47-Rosa-Nacarado.png">
+        <div class="dropdown"><img src="https://www.decoracionesglobos.com/wp-content/uploads/2018/09/47-Rosa-Nacarado.png">
+            <div class="dropdown-child" id="drop">
+                <a onclick="Exit(); reload(); reload()" href="#">Выйти</a>
+            </div>
+        </div>
         <button id="loginBtn" class="navButtons login-child" onclick="OpenForm()">Войти</button>
        <span id="user" class="navButtons login-child"></span>
     </div>
@@ -35,11 +39,11 @@
         </div>
     </div>
     <div class="popup1" id="popup-2">
-        <div class="content1" id="flexLogin">
+        <div class="content1 form" id="flexLogin">
             <form id="loginForm">
                 <input class="textBox" id="username" type="text" placeholder="username" required><br/>
                 <input class="textBox" id="psw" type="password" placeholder="password" required><br/>
-                <button class="btn" type="submit" id="submitBtn" onclick="Login()">Login</button>
+                <button class="btn" type="submit" id="submitBtn" onclick="Login(); set()">Login</button>
             </form>
         </div>
     </div>
