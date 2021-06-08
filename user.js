@@ -52,6 +52,7 @@ add.onclick = function(){
     let counter = i;
 
     localStorage.setItem(counter.toString(), document.getElementsByClassName("added_div")[i].innerHTML);
+    localStorage.setItem(counter.toString(), document.getElementsByClassName("added_div")[i].innerHTML);
 };
 
 if(!localStorage.user){

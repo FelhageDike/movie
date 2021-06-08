@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмотека</title>
+</head>
+<header class="site-header">
+    <div>
+
+        <a href="main.html" class="navButtons">Фильмотека</a>
+
+    </div>
+    <div class="navbar">
+        <nav>
+
+            <a href="index.html" class="navButtons">Фильмы</a>
+            <a href="#" class="navButtons">Действие</a>
+            <a href="#" class="navButtons">Действие</a>
+        </nav>
+    </div>
+
+    <div class="login">
+        <div class="dropdown"><img src="https://www.decoracionesglobos.com/wp-content/uploads/2018/09/47-Rosa-Nacarado.png">
+            <div class="dropdown-child" id="drop">
+                <a onclick="Exit(); reload(); reload()" href="#">Выйти</a>
+            </div>
+        </div>
+        <button id="loginBtn" class="navButtons login-child" onclick="OpenForm()">Войти</button>
+        <span id="user" class="navButtons login-child"></span>
+    </div>
+
+</header>
+<body>
+<div class="popup1" id="popup-2">
+    <div class="content1 form" id="flexLogin">
+        <form id="loginForm">
+            <input class="textBox" id="username" type="text" placeholder="username" required><br/>
+            <input class="textBox" id="psw" type="password" placeholder="password" required><br/>
+            <button class="btn" type="submit" id="submitBtn" onclick="Login(); set()">Login</button>
+        </form>
+    </div>
+</div>
+
+<div id="empty"></div>
+<div class="popup" id="popup-1">
+    <div class="content">
+        <div class="close-btn" onclick="TogglePopUp()">X</div>
+        <h1>Что за фильм?</h1>
+        <div class="input-field"> <input class="validate" placeholder="Название" type="text" id="name"></div>
+        <div class="input-field"> <input class="validate" placeholder="Страна" type="text" id="country"></div>
+        <div class="input-field"> <input class="validate" placeholder="Жанр" type="text" id="genre"></div>
+        <div class="input-field"><input class="validate" placeholder="Режиссер" type="text" id="director"></div>
+        <div class="input-field"><input class="validate" placeholder="Сценарий" type="text" id="scenario"></div>
+        <div class="input-field"> <input class="validate" placeholder="Продюсер" type="text" id="producer"></div>
+        <div class="input-field"> <input class="validate" placeholder="Оператор" type="text" id="operator"></div>
+        <div class="input-field"> <input class="validate" placeholder="Композитор" type="text" id="compositor"></div>
+        <div class="input-field"><input class="validate" placeholder="Сборы" type="text" id="cash"></div>
+        <div class="input-field"><input class="validate" placeholder="Возраст" type="text" id="ageRating"></div>
+        <div class="input-field"><input class="validate" placeholder="Продолжительность" type="text" id="timeline"></div>
+        <div class="input-field"><input class="validate" placeholder="Ссылка на постер" type="text" id="poster"></div>
+        <div class="input-field"><input class="validate" type="date" id="release"></div>
+        <div class="input-field"><button class="btn" onclick="AddMovie()" id="btnSubmit">Добавить</button></div>
+    </div>
+
+</div>
+<div class="greeting">
+    <div>
+        <h2>Привет, киноман!</h2>
+        <div class="border">
+            <p class="what"> Таким образом, современная методология разработки позволяет <br> выполнить важные задания по разработке переосмысления <br> внешнеэкономических политик. Сложившаяся структура<br>
+                организации не даёт нам иного выбора.</p>
+        </div>
+    </div>
+        <img class="hello" src="pics/123.png">
+</div>
+
+
+
+
+<script src="user.js"></script>
+<script src="addMovie.js"></script>
+</body>
+</html>

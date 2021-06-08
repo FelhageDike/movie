@@ -163,25 +163,35 @@ span{
 }
 
 #grid {
+    margin: 10px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 2vw;
 }
 #grid > div {
-    font-size: 5vw;
-    padding: 10px;
-    background: gold;
     text-align: center;
 }
 body{
     background-color: #100F00;
 }
-.add_div{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
 
+.added_div{
+
+}
+.img{
+
+    width: 180px;
+    height: 80%;
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+.about{
+    max-width: 180px;
+    background-color: #F83AB7;
+    border-radius:0px 0px 20px 20px;
+    text-align: center;
 }
 
 
@@ -261,6 +271,37 @@ h1 {
     padding-bottom: 10px;
     font-family: Gilroy-Regular;
 }
+h2{
+    position: relative;
+    left: -4px;
+    color: #F83AB7;
+    font-family: Gilroy-Regular;
+    font-size: 69px;
+    text-align: left;
+
+}
+.greeting{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+.hello{
+    margin-right: 240px;
+}
+.what{
+    line-height:118%;
+    max-width: 660px;
+    max-height: 108px;
+
+}
+.border{
+
+    border-left: 7px solid #F83AB7;
+}
 
 .dropdown {
     position: relative;
@@ -281,6 +322,32 @@ h1 {
 .dropdown:hover .dropdown-child {
     display: block;
 }
+.about{
+    background-color: #F83AB7;
+    border-radius:0px 0px 20px 20px;
+    width: 100%;
 
+
+}
+.qwe{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 40px;
+    background: #F83AB7;
+}
+
+.eee{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 13px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #F83AB7;
+    color: #F83AB7;
+}
+p{
+    margin: 16px;
+    color: #fff;
+    font-family: Gilroy-Regular;
+}
 
 
